@@ -76,3 +76,5 @@ senha = Entrada.leiaInt("Escreva sua senha:");
 codigo = Entrada.leiaInt("Escreva seu codigo de acesso:");}
 System.out.println("Acesso permitido"); }}
 
+Fim!
+
