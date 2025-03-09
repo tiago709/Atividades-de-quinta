@@ -1,1 +1,12 @@
 Atividades: 
+
+1.
+int data =Entrada.leiaInt("digite seu ano de nascimento");
+int anoatual = 2025;
+int validar;
+validar = data - anoatual;
+if (validar > 18) {
+System.out.println("Pode votar");
+} else {
+System.out.println("Não pode votar");}
+
