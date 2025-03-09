@@ -10,3 +10,69 @@ System.out.println("Pode votar");
 } else {
 System.out.println("Não pode votar");}
 
+2.
+int ano =Entrada.leiaInt("digite seu anos de vida");
+int meses =Entrada.leiaInt("digite seu mes de nascimento");
+int dia =Entrada.leiaInt("digite seu dia de nascimento");
+int validade = ano * 365;
+int validarmesses = meses * 30;
+int soma = validade + validarmesses + dia;
+System.out.println("você tem " + soma);
+
+3.
+int banana =Entrada.leiaInt("digite quantas bananas você comprou?");
+double total1;
+double total2;
+if (banana > 12) {
+total1 = banana * 2.50;
+System.out.println("Seu custo foi  " + total1);
+} else {
+total2 = banana * 2.00;
+System.out.println("Seu custo foi  " + total2);}
+
+4.
+int n1 = Entrada.leiaInt("Escreva 1° número:");
+int n2 = Entrada.leiaInt("Escreva 2° número:");
+int n3 = Entrada.leiaInt("Escreva 3° número:");
+int menor = 0,medio = 0,maior = 0;
+
+if (n1 > n2 && n1 > n3) {
+maior = n1;
+if (n2 > n3){
+medio = n2;
+menor = n3;
+}else{
+medio = n3;
+menor = n2;}}
+
+if (n2 > n3 && n2 > n1) {
+maior = n2;
+if (n3 > n1){
+medio = n3;
+menor = n1;
+}else{
+medio = n1;
+menor = n3;}}
+
+if (n3 > n2 && n3 > n1) {
+maior = n3;
+if (n2 > n1){
+medio = n2;
+menor = n1;
+}else{
+medio = n1;
+menor = n2;}}
+
+System.out.println(maior+","+medio+","+menor); }}
+
+5.
+int csenha = 9999;
+int ccodigo = 1234;
+int senha = Entrada.leiaInt("Escreva sua senha:");
+int codigo = Entrada.leiaInt("Escreva seu codigo de acesso:");
+while(codigo != ccodigo && senha != csenha){
+System.out.println("Acesso negado, verifique os dados");
+senha = Entrada.leiaInt("Escreva sua senha:");
+codigo = Entrada.leiaInt("Escreva seu codigo de acesso:");}
+System.out.println("Acesso permitido"); }}
+
